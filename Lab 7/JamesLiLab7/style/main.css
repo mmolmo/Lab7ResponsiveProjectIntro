@@ -1,6 +1,131 @@
 /*imports normalize*/
 @import "normalize.css";
+/*text elements that show regardless of media query*/
+  h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36pt;
+    color: rgb(255, 255, 255)
+  }
+  h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28pt;
+    color: rgb(0, 0, 0)
+  }
+  p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0)
+  }
+  a:link{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+  }
+  a:visited{
+    color: white;
+  }
+  a:hover{
+    color: green;
+  }
+  img{
+    max-width:100%;
+    min-height: auto;
+    border-radius: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+@media screen and (max-width: 600px){
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    grid-gap: 10px
+  }
+  .top {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #0a0a0a;
+    height: fit-content;
+  }
+  .bottom{
+    display: grid;
+    grid-template-columns: auto;
+    height: fit-content;
+  }
+}
+  @media screen and (min-width: 600px) {
+  /*grid 2 col*/
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px
+  }
+  .content{
+    display: grid;
+    height: auto;
+    grid-template-columns: auto auto;
+    background-color: #6c5644;
+    padding: 10px;
+    grid-gap: 10px
+  }
+.wide {
+  grid-column: 1 / span 3;
+  background-color: #d3d2b3;
+}
+.long{
+  grid-row: 1 / span 5;
+  grid-column: 1;
+}
+.top {
+  display: grid;
+  grid-column: 1 / span 3;
+  grid-template-columns: auto auto auto;
+  background-image: url("../images/superb-fairywrens-7754678_960_720.jpg");
+  background-size: 100%;
+  background-origin: content;
+  background-repeat: no-repeat;
+}
+.bottom{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column: 1 / span 3;
+}
+.title{
+  grid-column: 1 / span 2;
+}
+.nav{
+  /*root directory up one level*/
+  grid-column: 1/ span 3;
+}
+}
 
-h1{
-  color: brown
-};
+.button{
+  background-color: #0808083f;
+  text-align: center;
+}
+.bottom{
+  background-color: #0a0a0a;
+}
+.link{
+  background-color: #0808083f;
+  margin: 10px;
+  text-align: right;
+}
+.long{
+  grid-row: 1 / span 5;
+  grid-column: 1;
+  background-color: #d3d2b3;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 25px;
+}
+.content {
+  background-color: #6c5644;;
+  grid-row: 3 / span 1;
+  grid-column: 3;
+}
+.par {
+ background-color: #d3d2b3;
+ grid-column: auto;
+ grid-row: auto;
+}
+
