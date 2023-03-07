@@ -42,7 +42,6 @@ img {
   .grid {
     display: grid;
     grid-template-columns: auto;
-    background-color: #6c5644;
     grid-gap: 10px;
   }
 
@@ -66,9 +65,19 @@ img {
     padding: 10px;
     background-color: rgba(0, 0, 0);
   }
+  .nav {
+    /*root directory up one level*/
+    background-image: url("../images/superb-fairywrens-7754678_960_720.jpg");
+    background-size: 100%;
+    background-origin: content;
+    background-repeat: no-repeat;
+  }
   nav {
     /*root directory up one level*/
-    background-color:black;
+    background-image: url("../images/superb-fairywrens-7754678_960_720.jpg");
+    background-size: 100%;
+    background-origin: content;
+    background-repeat: no-repeat;
   }
 }
 
