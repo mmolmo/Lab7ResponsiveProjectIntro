@@ -28,17 +28,19 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
 /*elements that show regardless of media query*/
-  
   img{
+    /*image centering*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*width property*/
     max-width:100%;
     min-height: auto;
     border-radius: 5%;
-    margin-left: auto;
-    margin-right: auto;
   }
   
   /*formatting for header and footer*/
-    /*navbar*/
+  /*navbar*/
     .button{
       background-color: #0808083f;
       text-align: center;
@@ -48,6 +50,7 @@
       margin: 10px;
       text-align: right;
     }
+  /*footer*/
   .bottom{
     background-color: #0a0a0a;
   }
@@ -72,6 +75,7 @@
    grid-column: auto;
    grid-row: auto;
   }
+
 /*media query that activates when the screen is below 600px*/
 @media screen and (max-width: 600px){
   .grid {
@@ -81,6 +85,7 @@
     grid-gap: 10px
   }
   /*formatting for header and footer*/
+  /*header*/
   .top {
     display: grid;
     grid-template-columns: auto;
@@ -90,10 +95,14 @@
     background-repeat: no-repeat;
     height: fit-content;
   }
+  /*footer*/
   .bottom{
     display: grid;
     grid-template-columns: auto;
     height: fit-content;
+  }
+  .link{
+    text-align: center;
   }
 }
 /*media query that activates when the screen is above 600px*/
@@ -113,15 +122,12 @@
     grid-gap: 10px
   }
   /*applies for content in the main section*/
-  .wide {
-    grid-column: 1 / span 3;
-    background-color: #d3d2b3;
-  }
   .long{
-    grid-row: 1 / span 5;
+    grid-row: 1 / span 2;
     grid-column: 1;
   }
   /*formatting for header and footer*/
+  /*header*/
   .top {
     display: grid;
     grid-column: 1 / span 3;
@@ -130,18 +136,22 @@
     background-size: 100%;
     background-origin: content;
     background-repeat: no-repeat;
-  }
-  .title{
-    grid-column: 1 / span 2;
+    padding: 10px;
   }
   .nav{
-    /*root directory up one level*/
     grid-column: 1/ span 3;
   } 
+  .title{
+    grid-column: 1 / span 3;
+  }
+  /*footer*/
   .bottom{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     grid-column: 1 / span 3;
+  }
+  .sources{
+    grid-column: 3;
   }
 }
 
